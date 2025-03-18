@@ -4,6 +4,7 @@ import { RiMenuLine } from 'react-icons/ri';
 import Link from 'next/link';
 import { MdArrowOutward } from 'react-icons/md';
 import Image from 'next/image';
+import Slider from '@/components/Slider';
 
 export default function Navbar() {
   return (
@@ -52,11 +53,11 @@ export default function Navbar() {
         <div className="flex h-full justify-center items-center">
           <div className="w-96 mx-auto text-center justify-center flex flex-col items-center">
             <h1 className="font-text mx-auto font-extrabold  text-white text-5xl">
-              Work with professionals
+              WORK WITH PROFESSIONALS
             </h1>
             <p className="mx-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in
-              enim in magna. Interdum et malesuada fames ac
+              enim in magna.
             </p>
             <div className="flex items-center justify-center gap-6">
               <button className="bg-[#d9fa58] m-1 hover:bg-[#c5e643] text-sm font-bold text-black py-2 px-4 rounded-full">
@@ -83,8 +84,20 @@ export default function Navbar() {
           height="20"
           style={{ width: '100%' }}
         ></Image>
-        <div className="font-text font-extrabold text-4xl text-white">
+        <div className="font-text w-[1200px] max-w-full flex flex-col gap-10 justify-center items-center font-extrabold text-4xl text-white">
           <h1>WHY CHOOSE US</h1>
+          <div className="flex flex-wrap">
+            <Slider />
+          </div>
+          <h1>ABOUT OUR GYM</h1>
+          <Image
+            src="/images/gym.png"
+            alt="gym"
+            width="1000"
+            height="500"
+            className="rounded-lg"
+            style={{ height: '400px' }}
+          ></Image>
         </div>
       </main>
     </div>
