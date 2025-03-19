@@ -4,6 +4,7 @@ import { MdArrowOutward } from 'react-icons/md';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
+import { SlEnergy } from 'react-icons/sl';
 
 export default function ImageSlider(): JSX.Element {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -65,9 +66,15 @@ export default function ImageSlider(): JSX.Element {
               </div>
               <Link
                 href="#"
-                className="text-white text-sm group-hover:text-black hover:text-[#80817f] flex gap-2 items-center"
+                className="text-white text-sm group-hover:text-black hover:text-[#80817f] flex justify-between"
               >
-                Learn More <MdArrowOutward />
+                <p className="flex gap-2 items-center">
+                  Learn More <MdArrowOutward />
+                </p>
+                <SlEnergy
+                  size={40}
+                  className="text-[#d9fc57] group-hover:text-black"
+                />
               </Link>
             </div>
           </div>
@@ -77,13 +84,19 @@ export default function ImageSlider(): JSX.Element {
         className="absolute left-0 top-1/2 rounded-xl text-white p-2 group"
         onClick={prevSlide}
       >
-        <FaArrowCircleLeft className="text-gray-400 group-hover:text-white" />
+        <FaArrowCircleLeft
+          className="group-hover:text-[#838285] text-white"
+          size={30}
+        />
       </button>
       <button
         className="right-0 top-1/2 rounded-xl absolute text-white p-2 group"
         onClick={nextSlide}
       >
-        <FaArrowCircleRight className="text-gray-400 group-hover:text-white" />
+        <FaArrowCircleRight
+          className="group-hover:text-[#838285] text-white"
+          size={30}
+        />
       </button>
     </div>
   );

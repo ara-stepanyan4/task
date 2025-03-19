@@ -1,17 +1,20 @@
-import { IoMdSearch } from 'react-icons/io';
+import { IoMdSearch, IoMdTime } from 'react-icons/io';
 import { BiMessageAltDetail } from 'react-icons/bi';
 import { RiMenuLine } from 'react-icons/ri';
 import Link from 'next/link';
 import { MdArrowOutward } from 'react-icons/md';
 import Image from 'next/image';
 import Slider from '@/components/Slider';
+import { FaPhone } from 'react-icons/fa';
+import { TfiInstagram } from 'react-icons/tfi';
+import { CiFacebook, CiLocationOn, CiYoutube } from 'react-icons/ci';
 
 export default function Navbar() {
   return (
-    <div className="flex flex-col items-center text-[#838285] min-h-screen">
+    <div className="flex flex-col items-center text-[#838285] min-h-screen max-w-full">
       <header className="overlay justify-center bg-no-repeat bg-cover flex flex-col items-center bg-center w-full h-[600px] bg-[url('/images/background1.jpeg')]">
         <nav className=" text-[#838285] p-4 w-full">
-          <div className="container w-full mx-auto flex justify-between items-center">
+          <div className="container w-full mx-auto flex justify-around items-center">
             <h1 className="text-xl font-bold">GYMTEAM</h1>
             <ul
               className={`flex justify-between md:space-x-6 top-16 left-0 w-full md:w-auto p-4 md:p-0`}
@@ -84,22 +87,71 @@ export default function Navbar() {
           height="20"
           style={{ width: '100%' }}
         ></Image>
-        <div className="font-text w-[1200px] max-w-full flex flex-col gap-10 justify-center items-center font-extrabold text-4xl text-white">
-          <h1>WHY CHOOSE US</h1>
+        <div className="font-text w-[1200px] max-w-full flex flex-col gap-10 justify-center items-center font-extrabold text-white">
+          <h1 className="text-4xl">WHY CHOOSE US</h1>
           <div className="flex flex-wrap">
             <Slider />
           </div>
-          <h1>ABOUT OUR GYM</h1>
+          <h1 className="text-4xl">ABOUT OUR GYM</h1>
           <Image
             src="/images/gym.png"
             alt="gym"
-            width="1000"
-            height="500"
-            className="rounded-lg"
+            width="1100"
+            height="600"
+            className="rounded-lg max-w-full"
             style={{ height: '400px' }}
           ></Image>
+          <p className="text-[#838285] p-10 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
       </main>
+      <footer className="opacity-[0.7] bg-[#212121] h-60 flex m-0 p-12 box-border w-[80%] rounded-xl">
+        <div className="h-full flex flex-col justify-between">
+          <h1 className="flex gap-1 text-white text-3xl">
+            It’s Gym <span className="text-[#d9fa58]">Time</span>
+          </h1>
+          <div className="text-white flex gap-5 cursor-pointer justify-center items-center">
+            <span>
+              <TfiInstagram size={30} />
+            </span>
+            <span>
+              <CiFacebook size={40} />
+            </span>
+            <span>
+              <CiYoutube size={40} />
+            </span>
+          </div>
+        </div>
+        <div className="text-center text-white w-[70%] flex flex-col gap-5">
+          <h2>CONTACT US</h2>
+          <p className="flex text-[#838285] cursor-pointer justify-center hover:underline">
+            <span>
+              <CiLocationOn />
+            </span>
+            8558 Green Rd., LA
+          </p>
+          <p className="flex justify-center cursor-pointer text-[#838285] hover:underline">
+            <span>
+              <FaPhone />
+            </span>
+            +1 (603) 555-0123
+          </p>
+
+          <p className="flex justify-center cursor-pointer text-[#838285] hover:underline">
+            <span>
+              <IoMdTime />
+            </span>
+            Mon-Sat: 9:00 AM – 23:00 PM
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
