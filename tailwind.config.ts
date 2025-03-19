@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        text: ['Anton', 'sans-serif'],
+        text: ['Emblema One', 'sans-serif'],
       },
       colors: {
         background: 'var(--background)',

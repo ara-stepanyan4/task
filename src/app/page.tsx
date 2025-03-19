@@ -55,7 +55,7 @@ export default function Navbar() {
         </nav>
         <div className="flex h-full justify-center items-center">
           <div className="w-96 mx-auto text-center justify-center flex flex-col items-center">
-            <h1 className="font-text mx-auto font-extrabold  text-white text-5xl max-sm:text-xl">
+            <h1 className="font-text font-extrabold  text-white text-6xl max-sm:text-xl">
               WORK WITH PROFESSIONALS
             </h1>
             <p className="mx-auto">
