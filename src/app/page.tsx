@@ -101,7 +101,7 @@ export default function Navbar() {
             className="rounded-lg max-w-full sm:w-[90%] max-sm:w-[80%] m-2"
             style={{ height: '400px' }}
           ></Image>
-          <p className="text-gray-200 p-10 text-center">
+          <p className="text-gray-200 p-10 w-[90%] text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
