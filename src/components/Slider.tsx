@@ -50,7 +50,7 @@ export default function ImageSlider(): JSX.Element {
 
   return (
     <div className="relative w-full mx-auto mt-4">
-      <div className="relative flex gap-4 justify-center mx-12">
+      <div className="relative flex gap-4 max-sm:flex-wrap justify-center mx-12">
         {divs.slice(currentIndex, currentIndex + 3).map((divel, idx) => (
           <div key={idx}>
             <div className="bg-[#212121] group hover:!text-black cursor-pointer hover:bg-[#d9fc57] rounded-lg p-6 min-h-[300px] flex flex-col justify-between">
@@ -59,7 +59,7 @@ export default function ImageSlider(): JSX.Element {
                 <h3 className="text-xl font-semibold group-hover:text-black text-white">
                   Muscles Building
                 </h3>
-                <p className="text-gray-200 group-hover:text-black text-sm">
+                <p className="text-[#838285] group-hover:text-black text-sm">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -85,7 +85,7 @@ export default function ImageSlider(): JSX.Element {
         onClick={prevSlide}
       >
         <FaArrowCircleLeft
-          className="group-hover:text-[#838285] text-white"
+          className="group-hover:text-[#838285] text-white max-sm:hidden"
           size={30}
         />
       </button>
@@ -94,7 +94,7 @@ export default function ImageSlider(): JSX.Element {
         onClick={nextSlide}
       >
         <FaArrowCircleRight
-          className="group-hover:text-[#838285] text-white"
+          className="group-hover:text-[#838285] text-white max-sm:hidden"
           size={30}
         />
       </button>

@@ -15,6 +15,9 @@ const config: Config = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
+      screens: {
+        'max-sm': { max: '600px' },
+      },
     },
   },
   plugins: [],

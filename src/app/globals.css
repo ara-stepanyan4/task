@@ -6,7 +6,6 @@
 :root {
   --background: #000000;
   --foreground: #171717;
-  --swiper-navigation-size: 20px !important;
 }
 
 @media (prefers-color-scheme: dark) {

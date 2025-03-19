@@ -13,11 +13,11 @@ export default function Navbar() {
   return (
     <div className="flex flex-col items-center text-[#838285] min-h-screen max-w-full">
       <header className="overlay justify-center bg-no-repeat bg-cover flex flex-col items-center bg-center w-full h-[600px] bg-[url('/images/background1.jpeg')]">
-        <nav className=" text-[#838285] p-4 w-full">
+        <nav className=" text-[#f2f2f2] p-4 w-full">
           <div className="container w-full mx-auto flex justify-around items-center">
             <h1 className="text-xl font-bold">GYMTEAM</h1>
             <ul
-              className={`flex justify-between md:space-x-6 top-16 left-0 w-full md:w-auto p-4 md:p-0`}
+              className={`flex justify-between max-sm:hidden md:space-x-6 top-16 left-0 w-full md:w-auto p-4 md:p-0`}
             >
               <li>
                 <a href="#" className="block py-2 md:py-0 hover:text-gray-300">
@@ -114,7 +114,7 @@ export default function Navbar() {
       </main>
       <footer className="opacity-[0.7] bg-[#212121] h-60 flex m-0 p-12 box-border w-[80%] rounded-xl">
         <div className="h-full flex flex-col justify-between">
-          <h1 className="flex gap-1 text-white text-3xl">
+          <h1 className="flex text-white text-xl gap-1 max-sm:text-lg">
             It’s Gym <span className="text-[#d9fa58]">Time</span>
           </h1>
           <div className="text-white flex gap-5 cursor-pointer justify-center items-center">
@@ -129,7 +129,7 @@ export default function Navbar() {
             </span>
           </div>
         </div>
-        <div className="text-center text-white w-[70%] flex flex-col gap-5">
+        <div className="text-center text-white w-[70%] max-sm:text-xs flex flex-col gap-5">
           <h2>CONTACT US</h2>
           <p className="flex text-[#838285] cursor-pointer justify-center hover:underline">
             <span>
