@@ -53,8 +53,10 @@ export default function ImageSlider(): JSX.Element {
       <div className="relative flex gap-4 max-sm:flex-wrap justify-center mx-12">
         {divs.slice(currentIndex, currentIndex + 3).map((divel, idx) => (
           <div key={idx}>
-            <div className="bg-[#212121] group hover:!text-black cursor-pointer hover:bg-[#d9fc57] rounded-lg p-6 min-h-[300px] flex flex-col justify-between">
-              <Image src={divel.src} alt="gym" width={50} height={50}></Image>
+            <div className="bg-[#212121] group hover:!text-black cursor-pointer hover:bg-[#d9fc57] rounded-lg p-6 h-[350px] flex flex-col justify-between">
+              <div className="h-20">
+                <Image src={divel.src} alt="gym" width={50} height={50}></Image>
+              </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold group-hover:text-black text-white">
                   Muscles Building

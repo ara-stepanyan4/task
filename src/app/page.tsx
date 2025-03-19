@@ -55,7 +55,7 @@ export default function Navbar() {
         </nav>
         <div className="flex h-full justify-center items-center">
           <div className="w-96 mx-auto text-center justify-center flex flex-col items-center">
-            <h1 className="font-text mx-auto font-extrabold  text-white text-5xl">
+            <h1 className="font-text mx-auto font-extrabold  text-white text-5xl max-sm:text-xl">
               WORK WITH PROFESSIONALS
             </h1>
             <p className="mx-auto">
@@ -98,7 +98,7 @@ export default function Navbar() {
             alt="gym"
             width="1100"
             height="600"
-            className="rounded-lg max-w-full"
+            className="rounded-lg max-w-full sm:w-[90%] max-sm:w-[80%] m-2"
             style={{ height: '400px' }}
           ></Image>
           <p className="text-gray-200 p-10 text-center">
@@ -112,8 +112,8 @@ export default function Navbar() {
           </p>
         </div>
       </main>
-      <footer className="opacity-[0.7] bg-[#212121] h-60 flex m-0 p-12 box-border w-[80%] rounded-xl">
-        <div className="h-full flex flex-col justify-between">
+      <footer className="opacity-[0.7] bg-[#212121] h-60 flex max-sm:flex-col m-0 p-12 box-border w-[80%] rounded-xl">
+        <div className="h-full flex flex-col sm:justify-between max-sm:justify-center max-sm:items-center">
           <h1 className="flex text-white text-xl gap-1 max-sm:text-lg">
             It’s Gym <span className="text-[#d9fa58]">Time</span>
           </h1>
@@ -129,7 +129,7 @@ export default function Navbar() {
             </span>
           </div>
         </div>
-        <div className="text-center text-white w-[70%] max-sm:text-xs flex flex-col gap-5">
+        <div className="text-center text-white w-[70%] max-sm:w-full max-sm:text-xs flex flex-col gap-5">
           <h2>CONTACT US</h2>
           <p className="flex text-[#838285] cursor-pointer justify-center hover:underline">
             <span>
